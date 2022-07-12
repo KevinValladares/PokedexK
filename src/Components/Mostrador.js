@@ -81,12 +81,16 @@ const Mostrador = () => {
         </ContainerBotones>
         <ContainerNombrePokemon>
           {listaPokemon.name}
-          <span>No. {idpokemon} </span>
+          <span> No. {idpokemon} </span>
         </ContainerNombrePokemon>
-        <h3> <strong>Tipo: </strong> {pokemontype}</h3>
 
         <ContenedorListadoLeft>
-            <h3> <strong>Habilidad: </strong></h3>
+        <h3> Tipo:  {pokemontype}</h3>
+        </ContenedorListadoLeft>
+       
+
+        <ContenedorListadoLeft>
+            <h3> Habilidad: </h3>
             {
               habilPokemon.map(
 

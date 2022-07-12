@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink, } from 'react-router-dom'
+import { Link, } from 'react-router-dom'
 
 export const Logo = styled.div`
 padding: 20px;
@@ -35,13 +35,14 @@ export const NavbarLinkContainer = styled.div`
 `
 
 
-export const NavBarLink = styled(NavLink)`
+export const NavBarLink = styled(Link)`
+
 
 color: black;
 padding: 0 30px;
 margin:1px;
 font-size: x-large;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Quicksand', sans-serif;
 text-decoration: none;
 background-color: white;
 display: flex;
@@ -77,12 +78,15 @@ justify-content: center;
 align-items: center;
 `
 export const InputBuscador = styled.input`
+width: 300px;
 outline: none;
 margin-bottom: 5px;
 border: 1px solid #dcdcdc;
 border-radius: 15px;
 padding: 10px;
-width: 300px;
+font-family: 'Quicksand', sans-serif;
+font-weight: bold;
+font-size:20px;
 `
 
 
@@ -91,6 +95,9 @@ display:flex;
 height:100%;
 justify-content: center;
 align-items: center;
+margin:20px 0px 0px 0px;
+
+
 `
 export const SeccionListado = styled.section`
 background-color: rgb(255,255,255,0.6);
@@ -98,11 +105,12 @@ border-top: solid 2px palevioletred;
 padding: 20px 25px;
 width: 500px;
 box-shadow:0px 2px 3px rgb(0,0,0,0.3);
+border-radius:15px;
 `
 
 
 export const Container = styled.div`
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Quicksand', sans-serif;
 justify-content: center;
 align-items: center;
 `
@@ -113,19 +121,19 @@ display:flex;
 justify-content:left;
 align-items: left;
 list-style: none;
-
+font-family: 'Quicksand', sans-serif;
 
 & > h3{
-   margin:0; 
+   margin:0px 0px 10px 0px; 
    padding:0;
-  
+   font-family: 'Quicksand', sans-serif;
 }
 
 & > li{
     color: black;
     font-weight: bold;
     font-size:18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     padding: 1px 4px;
     margin:0px;
     
@@ -179,7 +187,7 @@ overflow: auto;
 
 export const ContainerItemListado = styled.div`
   background-color: hsl(0deg 100% 99% / 80%);
-  font-family: arial;
+  font-family: 'Quicksand', sans-serif;
   border-radius: 10px;
   margin-bottom: 5px;
   list-style: none;
@@ -191,7 +199,7 @@ export const ContainerItemListado = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-
+font-weight:bold;
 }
 
 `
@@ -204,6 +212,7 @@ border-top: solid 2px palevioletred;
 padding: 15px;
 width: 500px;
 box-shadow:0px 2px 3px rgb(0,0,0,0.3);
+border-radius:15px;
 `
 
 export const ContainerBotones = styled.div`
@@ -214,7 +223,7 @@ export const ContainerBotones = styled.div`
 &>a{
   display: flex;
   align-items: center;
-  
+  font-family: 'Quicksand', sans-serif;
   //background-color: rgba(78,78,75,0.3);
   border-radius: 15px;
   text-decoration: none;
@@ -229,11 +238,11 @@ export const ContainerNombrePokemon = styled.h1`
 
   text-align: center;
   font-size: 26px;
-
+  font-family: 'Quicksand', sans-serif;
 
   &>span{
     color: grey;
-
+    font-family: 'Quicksand', sans-serif;
   }
 
 `

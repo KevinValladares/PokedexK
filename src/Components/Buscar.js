@@ -49,24 +49,24 @@ const Buscar = () => {
     <div>
 
       <FormBuscar onSubmit={ListarPokemones}>
-        <InputBuscador placeholder="Buscar Pokemom" type="text" onChange={handleSearch} spellCheck="false"></InputBuscador>
+        <InputBuscador placeholder="Buscar Pokemon" type="text" onChange={handleSearch} spellCheck="false"></InputBuscador>
       </FormBuscar>
 
 
       <ContenedorListado>
         <SeccionListado>
           <Container>
-            <h1> <strong>Nombre: </strong> {listaPokemon.name}</h1>
-            <h3> <strong>Tipo: </strong> {pokemontype}</h3>
+            <h1> Nombre: {listaPokemon.name}</h1>
+            <h3> Tipo:  {pokemontype}</h3>
 
           </Container>
 
           <ContenedorListadoLeft>
-            <h3> <strong>Habilidad: </strong></h3>
+            <h3> Habilidad:</h3>
             {
               habilPokemon.map(
 
-                (abilities) => <li key={abilities}>{abilities}</li>
+                (abilities) => <li key={abilities}>{abilities},</li>
 
               )
             }
