@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link, } from 'react-router-dom'
+import { BarraNav, Logo, NavBarLink, BarraNavInterior, NavbarLinkContainer } from './Components/Style'
+import Buscar from './Components/Buscar';
+import Lista from './Components/Lista'
+import Mostrador from './Components/Mostrador'
+import pic from "./Images/logo-Pokemon.png";
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+    <Router>
+
+      <Logo>
+    <img src={pic} width="200" height="80"/>
+      </Logo>
+
+      <BarraNav>
+
+        <BarraNavInterior>
+          <NavbarLinkContainer>
+            <NavBarLink  to="/" >Buscar</NavBarLink>
+            <NavBarLink  to="/Mostrador">Mostrador</NavBarLink>
+            <NavBarLink  to="/Lista" >Lista</NavBarLink>
+           
+          </NavbarLinkContainer>
+        </BarraNavInterior>
+
+
+
+      </BarraNav>
+
+
+
+
+
+
+      <Routes>
+
+        <Route exact path="/" element={<Buscar />} />
+        <Route path="/Lista" element={<Lista />} />
+        <Route path="/Mostrador" element={<Mostrador />} />
+
+
+      </Routes>
+
+    </Router >
+
   );
 }
 
